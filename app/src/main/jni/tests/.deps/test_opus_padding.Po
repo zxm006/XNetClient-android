@@ -1,0 +1,88 @@
+tests/test_opus_padding.o: tests/test_opus_padding.c \
+ /home/work/opus-1.1.3/bin/../sysroot/usr/include/stdio.h \
+ /home/work/opus-1.1.3/bin/../sysroot/usr/include/sys/cdefs.h \
+ /home/work/opus-1.1.3/bin/../sysroot/usr/include/sys/cdefs_elf.h \
+ /home/work/opus-1.1.3/bin/../sysroot/usr/include/android/api-level.h \
+ /home/work/opus-1.1.3/bin/../sysroot/usr/include/sys/types.h \
+ /home/work/opus-1.1.3/bin/../lib/gcc/arm-linux-androideabi/4.6/include/stddef.h \
+ /home/work/opus-1.1.3/bin/../lib/gcc/arm-linux-androideabi/4.6/include/stdint.h \
+ /home/work/opus-1.1.3/bin/../sysroot/usr/include/stdint.h \
+ /home/work/opus-1.1.3/bin/../sysroot/usr/include/sys/_types.h \
+ /home/work/opus-1.1.3/bin/../sysroot/usr/include/machine/_types.h \
+ /home/work/opus-1.1.3/bin/../sysroot/usr/include/sys/_wchar_limits.h \
+ /home/work/opus-1.1.3/bin/../sysroot/usr/include/linux/posix_types.h \
+ /home/work/opus-1.1.3/bin/../sysroot/usr/include/linux/stddef.h \
+ /home/work/opus-1.1.3/bin/../sysroot/usr/include/linux/compiler.h \
+ /home/work/opus-1.1.3/bin/../sysroot/usr/include/asm/posix_types.h \
+ /home/work/opus-1.1.3/bin/../sysroot/usr/include/asm/types.h \
+ /home/work/opus-1.1.3/bin/../sysroot/usr/include/linux/types.h \
+ /home/work/opus-1.1.3/bin/../sysroot/usr/include/machine/kernel.h \
+ /home/work/opus-1.1.3/bin/../sysroot/usr/include/sys/sysmacros.h \
+ /home/work/opus-1.1.3/bin/../lib/gcc/arm-linux-androideabi/4.6/include/stdarg.h \
+ /home/work/opus-1.1.3/bin/../sysroot/usr/include/stdlib.h \
+ /home/work/opus-1.1.3/bin/../sysroot/usr/include/string.h \
+ /home/work/opus-1.1.3/bin/../sysroot/usr/include/malloc.h \
+ /home/work/opus-1.1.3/bin/../sysroot/usr/include/alloca.h \
+ /home/work/opus-1.1.3/bin/../sysroot/usr/include/strings.h \
+ /home/work/opus-1.1.3/bin/../sysroot/usr/include/memory.h include/opus.h \
+ include/opus_types.h include/opus_defines.h tests/test_opus_common.h
+
+/home/work/opus-1.1.3/bin/../sysroot/usr/include/stdio.h:
+
+/home/work/opus-1.1.3/bin/../sysroot/usr/include/sys/cdefs.h:
+
+/home/work/opus-1.1.3/bin/../sysroot/usr/include/sys/cdefs_elf.h:
+
+/home/work/opus-1.1.3/bin/../sysroot/usr/include/android/api-level.h:
+
+/home/work/opus-1.1.3/bin/../sysroot/usr/include/sys/types.h:
+
+/home/work/opus-1.1.3/bin/../lib/gcc/arm-linux-androideabi/4.6/include/stddef.h:
+
+/home/work/opus-1.1.3/bin/../lib/gcc/arm-linux-androideabi/4.6/include/stdint.h:
+
+/home/work/opus-1.1.3/bin/../sysroot/usr/include/stdint.h:
+
+/home/work/opus-1.1.3/bin/../sysroot/usr/include/sys/_types.h:
+
+/home/work/opus-1.1.3/bin/../sysroot/usr/include/machine/_types.h:
+
+/home/work/opus-1.1.3/bin/../sysroot/usr/include/sys/_wchar_limits.h:
+
+/home/work/opus-1.1.3/bin/../sysroot/usr/include/linux/posix_types.h:
+
+/home/work/opus-1.1.3/bin/../sysroot/usr/include/linux/stddef.h:
+
+/home/work/opus-1.1.3/bin/../sysroot/usr/include/linux/compiler.h:
+
+/home/work/opus-1.1.3/bin/../sysroot/usr/include/asm/posix_types.h:
+
+/home/work/opus-1.1.3/bin/../sysroot/usr/include/asm/types.h:
+
+/home/work/opus-1.1.3/bin/../sysroot/usr/include/linux/types.h:
+
+/home/work/opus-1.1.3/bin/../sysroot/usr/include/machine/kernel.h:
+
+/home/work/opus-1.1.3/bin/../sysroot/usr/include/sys/sysmacros.h:
+
+/home/work/opus-1.1.3/bin/../lib/gcc/arm-linux-androideabi/4.6/include/stdarg.h:
+
+/home/work/opus-1.1.3/bin/../sysroot/usr/include/stdlib.h:
+
+/home/work/opus-1.1.3/bin/../sysroot/usr/include/string.h:
+
+/home/work/opus-1.1.3/bin/../sysroot/usr/include/malloc.h:
+
+/home/work/opus-1.1.3/bin/../sysroot/usr/include/alloca.h:
+
+/home/work/opus-1.1.3/bin/../sysroot/usr/include/strings.h:
+
+/home/work/opus-1.1.3/bin/../sysroot/usr/include/memory.h:
+
+include/opus.h:
+
+include/opus_types.h:
+
+include/opus_defines.h:
+
+tests/test_opus_common.h:

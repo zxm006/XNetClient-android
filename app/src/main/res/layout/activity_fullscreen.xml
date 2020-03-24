@@ -1,0 +1,286 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"   
+     android:layout_width="match_parent"    
+     android:layout_height="match_parent" 
+     android:background="#909090"   
+     android:scrollbars="vertical" > 
+	<HorizontalScrollView    
+    android:layout_width="match_parent"    
+    android:layout_height="match_parent"> 
+    
+	<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="5dp"
+    android:background="#909090">
+    
+      <LinearLayout
+        android:id="@+id/ly_ptt_addr"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="2dp">
+	        
+          <!-- android:text="192.168.111.250" -->
+          <!-- android:text="115.182.73.124" -->
+          <EditText
+	         android:id="@+id/editText_ipaddr"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:layout_weight="1"
+	         android:text="123.207.174.133"
+	         android:textColor="#FFFFFF"
+	         android:textSize="15sp"/>
+          
+	     <EditText
+	         android:id="@+id/editText_userName"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:layout_weight="1"
+	         android:text="6008"
+	         android:textColor="#FFFFFF"
+	         android:textSize="15sp"/>
+	     <EditText
+	         android:id="@+id/editText_gameid"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:layout_weight="1"
+	         android:hint="gameid"
+	         android:text="球球大作战"
+	         android:textColor="#FFFFFF"
+	         android:textSize="15sp"/>
+      </LinearLayout>
+      
+      <LinearLayout
+        android:id="@+id/ly_ptt_addr2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/ly_ptt_addr"
+        android:layout_marginTop="2dp">
+	     
+          <EditText
+	         android:id="@+id/editText_game_server_id"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:layout_weight="1"
+	         android:hint="server id"
+	         android:text="server1"
+	         android:textColor="#FFFFFF"
+	         android:textSize="15sp"/>
+          
+	     <EditText
+	         android:id="@+id/editText_room_id"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:layout_weight="1"
+	         android:hint="room id"
+	         android:text="ROOM0"
+	         android:textColor="#FFFFFF"
+	         android:textSize="15sp"/>
+	     <EditText
+	         android:id="@+id/editText_group_id"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:layout_weight="1"
+	         android:hint="group id"
+	         android:text="group1"
+	         android:textColor="#FFFFFF"
+	         android:textSize="15sp"/>
+	     <EditText
+	         android:id="@+id/editText_expend"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:layout_weight="1"
+	         android:hint="expend"
+	         android:text="expend"
+	         android:textColor="#FFFFFF"
+	         android:textSize="15sp"/>
+	     
+      </LinearLayout>
+     
+     <LinearLayout
+        android:id="@+id/ly_ptt_login"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/ly_ptt_addr2"
+        android:layout_marginTop="5dp">
+         
+	        <Button 
+	        android:id="@+id/btn_login"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="登录"
+	        android:textColor="#FFFFFF"
+	        android:layout_weight="1"
+	        android:textSize="18sp"/>
+	        
+	        <RadioGroup android:id="@+id/radioGroup_ptt" 
+	            android:layout_width="wrap_content" 
+	            android:layout_height="wrap_content">
+				<RadioButton 
+				    android:id="@+id/radioGroup_room"
+				    android:layout_width="wrap_content" 
+				    android:layout_height="wrap_content" 
+				    android:text="房间发言" 
+				    android:textColor="#FFFFFF"
+				    android:checked="true"/>
+				<RadioButton 
+				    android:id="@+id/radioGroup_group"
+				    android:layout_width="wrap_content" 
+				    android:layout_height="wrap_content" 
+				    android:textColor="#FFFFFF"
+				    android:text="组内发言"/>    
+			</RadioGroup>
+
+	       <Button 
+	        android:id="@+id/btn_speak"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="开始发言"
+	        android:textColor="#FFFFFF"
+	        android:layout_weight="1"
+	        android:textSize="18sp"/>
+        </LinearLayout>
+
+     <LinearLayout
+        android:id="@+id/ly_ptt_show_info"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/ly_ptt_login"
+        android:layout_marginTop="5dp">
+	       <CheckBox
+	         android:id="@+id/checkBox_listen_inroom"
+	         android:layout_width="fill_parent"
+	         android:layout_height="wrap_content"
+	         android:textColor="#FFFFFF"
+	         android:layout_weight="1"
+	         android:text="在房间听" />
+	       
+	       <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:layout_below="@+id/ly_ptt_login"
+	        android:layout_marginTop="2dp">
+		       <TextView
+		         android:id="@+id/textView_speaker"
+		         android:layout_width="wrap_content"
+		         android:layout_height="wrap_content"
+		         android:layout_marginLeft="10dp"
+		         android:textColor="#FFFFFF"
+		         android:layout_weight="1"
+		         android:textSize="18sp"
+		         android:text="发言人:" />
+		       <TextView
+		         android:id="@+id/textView_in_room"
+		         android:layout_width="wrap_content"
+		         android:layout_height="wrap_content"
+		         android:layout_marginLeft="10dp"
+		         android:textColor="#FFFFFF"
+		         android:layout_weight="1"
+		         android:textSize="18sp"
+		         android:text="default" />
+		    </LinearLayout>
+	 </LinearLayout>
+	 
+     <ImageView
+        android:id="@+id/IV_speater_1"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/ly_ptt_show_info"
+        android:background="#55FF55"
+        android:layout_marginTop="5dp"/>
+
+     
+      <LinearLayout
+        android:id="@+id/ly_talk_btns"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/IV_speater_1"
+        android:layout_marginTop="2dp">
+	     
+          <EditText
+	         android:id="@+id/editText_talk_peer_numb"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:layout_weight="1"
+	         android:text="6007"
+	         android:textColor="#FFFFFF"
+	         android:textSize="15sp"/>
+          
+          <CheckBox
+	         android:id="@+id/checkBox_talk_isvideo"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:textColor="#FFFFFF"
+	         android:layout_weight="1"
+	         android:checked="true"
+	         android:text="视频通话" />
+          
+	     <Button 
+	        android:id="@+id/btn_talk_callout"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="发起呼叫"
+	        android:textColor="#FFFFFF"
+	        android:layout_weight="1"
+	        android:textSize="18sp"/>
+	     
+      </LinearLayout>
+      
+      <LinearLayout
+        android:id="@+id/ly_talk_btns2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/ly_talk_btns"
+        android:layout_marginTop="2dp">
+          
+	     <Button 
+	        android:id="@+id/btn_talk_speakphone_on"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="打开免提"
+	        android:textColor="#FFFFFF"
+	        android:layout_weight="1"
+	        android:textSize="18sp"/>
+	     <Button 
+	        android:id="@+id/btn_talk_switch_camera"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="切换摄像头"
+	        android:textColor="#FFFFFF"
+	        android:layout_weight="1"
+	        android:textSize="18sp"/>
+      </LinearLayout>
+
+      <LinearLayout
+        android:id="@+id/ly_talk_video"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/ly_talk_btns2"
+        android:layout_marginTop="2dp">
+          
+	     <SurfaceView
+          android:id="@+id/sv_local"
+          android:layout_width="144dp"
+          android:layout_height="176dp"
+          android:layout_marginLeft="10dp"
+          />
+	     
+	     <SurfaceView
+          android:id="@+id/sv_peer"
+          android:layout_width="144dp"
+          android:layout_height="176dp"
+          android:layout_marginLeft="5dp"
+          />
+	     
+      </LinearLayout>
+      
+	</RelativeLayout>
+	</HorizontalScrollView>
+</ScrollView> 
